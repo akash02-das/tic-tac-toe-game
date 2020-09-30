@@ -1,38 +1,99 @@
-.App {
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+.app {
+  width: 800px;
+  height: 550px;
+  margin: 0 auto;
+  background-color: #292b2c;
+  border-radius: 5px;
+}
+
+.app h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  font-size: 40px;
+}
+
+.tic {
+  color: #0275d8;
+}
+
+.tac {
+  color: #5cb85c;
+}
+
+.toe {
+  color: #5bc0de;
+}
+
+ol,
+ul {
+  padding-left: 50px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin: 10px 50px;
+  color: #5bc0de;
+  font-size: 24px;
+}
+
+.step-move {
+  font-size: 16px;
+  padding: 5px 10px;
+  margin-bottom: 8px;
+  background-color: #5cb85c;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.step-move:hover {
+  background-color: #5bc0de;
+}
+
+.step-move:focus {
+  outline: none;
+}
+
+.square {
+  background: #8390fa;
+  border: 2px solid #1d2f6f;
+  float: left;
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 34px;
+  width: 100px;
+  height: 100px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.square:focus {
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.game {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
 }
 
-.App-link {
-  color: #61dafb;
+.game-board {
+  margin: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.game-info {
+  margin-left: 20px;
 }
